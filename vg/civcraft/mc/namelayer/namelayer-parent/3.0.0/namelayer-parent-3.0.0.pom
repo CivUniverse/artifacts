@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.github.civclassic</groupId>
+    <artifactId>civclassic-parent</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <properties>
+    <namelayer.version>3.0.0</namelayer.version>
+  </properties>
+
+  <groupId>vg.civcraft.mc.namelayer</groupId>
+  <artifactId>namelayer-parent</artifactId>
+  <version>${namelayer.version}</version>
+  <name>NameLayer</name>
+  <packaging>pom</packaging>
+
+  <url>https://github.com/Civclassic/NameLayer</url>
+
+  <modules>
+    <module>namelayer-core</module>
+    <module>namelayer-zeus</module>
+    <module>namelayer-mc</module>
+  </modules>
+
+  <repositories>
+    <repository>
+      <id>civ-github-repo</id>
+      <url>https://raw.githubusercontent.com/CivClassic/artifacts/master/</url>
+    </repository>
+  </repositories>
+</project>

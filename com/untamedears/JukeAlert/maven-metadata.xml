@@ -3,11 +3,11 @@
   <groupId>com.untamedears</groupId>
   <artifactId>JukeAlert</artifactId>
   <versioning>
-    <release>2.1.1D</release>
+    <release>2.1.1</release>
     <versions>
       <version>2.1.1</version>
       <version>2.1.1D</version>
     </versions>
-    <lastUpdated>20210314000943</lastUpdated>
+    <lastUpdated>20210314062949</lastUpdated>
   </versioning>
 </metadata>

@@ -116,12 +116,20 @@
     <dependency>
       <groupId>vg.civcraft.mc.civmodcore</groupId>
       <artifactId>CivModCore</artifactId>
-      <version>1.8.1</version>
+      <version>1.8.2</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
           <artifactId>HikariCP</artifactId>
           <groupId>com.zaxxer</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>commons-lang3</artifactId>
+          <groupId>org.apache.commons</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>commons-collections4</artifactId>
+          <groupId>org.apache.commons</groupId>
         </exclusion>
         <exclusion>
           <artifactId>slf4j-api</artifactId>
@@ -130,6 +138,10 @@
         <exclusion>
           <artifactId>acf-bukkit</artifactId>
           <groupId>co.aikar</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>annotations</artifactId>
+          <groupId>org.jetbrains</groupId>
         </exclusion>
         <exclusion>
           <artifactId>jsr305</artifactId>

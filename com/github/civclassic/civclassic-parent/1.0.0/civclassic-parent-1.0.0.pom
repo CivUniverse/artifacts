@@ -34,7 +34,7 @@
       </resource>
     </resources>
     <plugins>
-      <!-- https://maven.apache.org/plugins/maven-compiler-plugin/ -->
+      <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -92,11 +92,11 @@
           </execution>
         </executions>
       </plugin>
-      <!-- https://maven.apache.org/plugins/maven-checkstyle-plugin/ -->
+      <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-checkstyle-plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.1.1</version>
+        <version>3.1.2</version>
         <configuration>
           <configLocation>
             https://raw.githubusercontent.com/CivClassic/style-guide/master/stylecheck.xml
@@ -115,6 +115,15 @@
       </plugin>
     </plugins>
   </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.20</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
 
   <reporting>
     <plugins>
@@ -149,7 +158,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
-            <version>3.2.0</version>
+            <version>3.3.0</version>
             <executions>
               <execution>
                 <id>attach-javadocs</id>
@@ -200,11 +209,11 @@
     </repository>
   </repositories>
 
-	<distributionManagement>
-		<repository>
-			<id>civ-jenkins</id>
-			<url>file:///var/jenkins_home/repoStaging</url>
-		</repository>
-	</distributionManagement>
+  <distributionManagement>
+    <repository>
+      <id>civ-jenkins</id>
+      <url>file:///var/jenkins_home/repoStaging</url>
+    </repository>
+  </distributionManagement>
 
 </project>

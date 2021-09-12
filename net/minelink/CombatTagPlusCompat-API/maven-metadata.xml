@@ -4,8 +4,8 @@
   <artifactId>CombatTagPlusCompat-API</artifactId>
   <versioning>
     <versions>
-      <version>1.3.3-SNAPSHOT</version>
+      <version>1.4.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20210526011723</lastUpdated>
+    <lastUpdated>20210911070449</lastUpdated>
   </versioning>
 </metadata>
